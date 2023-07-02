@@ -1,6 +1,6 @@
 {
   "name": "workbox-rspack-plugin",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "A plugin for rspack, helping you generate a manifest of local files that workbox-sw should precache.",
   "main": "dist/index.js",
   "scripts": {
