@@ -1,0 +1,62 @@
+{
+  "name": "workbox-rspack-plugin",
+  "version": "0.0.0",
+  "description": "A plugin for rspack, helping you generate a manifest of local files that workbox-sw should precache.",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "dev": "tsc --watch",
+    "build": "npm run lint && npm run clean && tsc",
+    "lint": "eslint . --ext .js,.ts --fix",
+    "clean": "rimraf lib",
+    "prepare": "husky install",
+    "test": "rspack build -c examples/rspack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nashaofu/workbox-rspack-plugin.git"
+  },
+  "keywords": [
+    "workbox",
+    "rspack",
+    "plugin",
+    "workboxjs",
+    "service worker",
+    "caching",
+    "fetch requests",
+    "offline",
+    "file manifest"
+  ],
+  "author": "nashaofu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nashaofu/workbox-rspack-plugin/issues"
+  },
+  "homepage": "https://github.com/nashaofu/workbox-rspack-plugin#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@rspack/core": "^0.2.4",
+    "pretty-bytes": "^5.4.1",
+    "upath": "^2.0.1",
+    "webpack-sources": "^3.2.3",
+    "workbox-build": "^7.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@rspack/cli": "^0.2.4",
+    "@types/webpack-sources": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  }
+}

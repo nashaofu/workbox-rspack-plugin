@@ -1,0 +1,5 @@
+/dist
+/examples
+.eslintrc.js
+commitlint.config.js
+lint-staged.config.js
