@@ -82,6 +82,7 @@ class GenerateSW {
       compilation,
       config,
     );
+
     config.manifestEntries = sortedEntries;
 
     const unbundledCode = populateSWTemplate(config);
